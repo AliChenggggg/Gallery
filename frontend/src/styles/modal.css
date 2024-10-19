@@ -1,0 +1,65 @@
+/* Dropdown button and menu styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666868; /* Unified text color */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* Unified padding */
+    border: 1px solid transparent; /* Border for layout */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    text-align: center; /* Center text */
+    background-color: #fff; /* White background */
+}
+
+.dropdown-toggle:hover {
+    background-color: #f8f9fa; /* Hover background color */
+}
+
+.dropdown-menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0; /* Remove padding for full width */
+    z-index: 1000;
+    min-width: 150px; /* Ensure dropdown menu is wide enough */
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Vertical alignment */
+}
+
+.dropdown-menu li {
+    padding: 20px 20px; /* Unified padding */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+    border-bottom: 1px solid #ddd; /* Add border between items */
+    font-size: 16px; /* Same size as the button */
+    font-weight: 500; /* Same weight as the button */
+    color: #666868; /* Same color as the button */
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+.dropdown-menu li:hover {
+    background-color: #f8f9fa; /* Hover background color */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}

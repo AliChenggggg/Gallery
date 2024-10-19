@@ -1,0 +1,94 @@
+/* 通用居中样式 */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    max-width: 1200px; /* 最大宽度 */
+    margin: 0 auto; /* 自动水平外边距 */
+}
+
+/* 主页样式 */
+.home {
+
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    padding-top: 200px;
+}
+
+.home-header h1 {
+    font-size: 12em;
+    //margin: 0;
+    font-family: 'Brush Script MT', cursive;
+    //color: #fff;
+}
+
+.home-header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+.home-main {
+    padding: 20px;
+    padding-top: 400px;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+.home-button {
+    display: inline-block;
+    background-color: rgba(9, 9, 9, 0.26);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .home {
+        padding-top: 60px; /* 减少顶部间距 */
+    }
+
+    .home-header h1 {
+        font-size: 2em; /* 减小字体大小 */
+    }
+
+    .home-header p {
+        font-size: 1.1em; /* 减小字体大小 */
+    }
+
+    .home-button {
+        padding: 10px 20px; /* 减少内边距 */
+        font-size: 1em; /* 减小字体大小 */
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        padding-top: 40px; /* 进一步减少顶部间距 */
+    }
+
+    .home-header h1 {
+        font-size: 1.5em; /* 进一步减小字体大小 */
+    }
+
+    .home-header p {
+        font-size: 1em; /* 进一步减小字体大小 */
+    }
+
+    .home-button {
+        padding: 8px 15px; /* 进一步减少内边距 */
+        font-size: 0.9em; /* 进一步减小字体大小 */
+    }
+}

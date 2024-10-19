@@ -1,0 +1,159 @@
+
+.album-edit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+    background-color: #ffffffb5; /* Light background for better contrast */
+    border-radius: 10px; /* Optional: add rounded corners */
+    max-height: 90vh; /* Limit the container height to 90% of the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+}
+
+
+.album-name-container {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Make container full width */
+    max-width: 600px; /* Limit the max width */
+    margin-bottom: 20px;
+}
+
+.album-name-input {
+    font-size: 1.2rem; /* Larger font size for better readability */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center; /* Center text horizontally */
+    flex-grow: 1; /* Allow input to take up available space */
+
+}
+
+.album-name-input:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.delete-album-button {
+    background-color: transparent; /* Transparent background */
+    color: #090909; /* Red color for delete button */
+    border: none;
+    font-size: 1.5rem; /* Larger font size for better visibility */
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Prevent text wrapping */
+    align-items: center;
+}
+
+.delete-album-button:hover {
+    color: #c82333; /* Darker red on hover */
+}
+
+.delete-album-button:active {
+    color: #bd2130; /* Even darker red on click */
+}
+
+.error-message {
+    color: #dc3545; /* Red text for error messages */
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.album-container1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0.9;
+
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent content from overflowing */
+
+}
+
+.album-images {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    overflow-y: hidden; /* Hides vertical overflow */
+    width: 100%; /* Full width of the container */
+    height: calc(100% - 20px); /* Full height minus the height of the scroll bar plus padding */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+    padding: 10px; /* Add padding around the images */
+}
+
+/* Ensure images fit within the scroll container */
+.album-images img {
+    max-width: 100%; /* Ensure images do not exceed container width */
+    max-height: 100%; /* Ensure images do not exceed container height */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.album-images img:hover {
+    transform: scale(1.05);
+}
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .album-name-input {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .delete-album-button {
+        font-size: 1.2rem; /* Adjust font size for responsiveness */
+    }
+
+    .album-images img {
+        max-width: 120px;
+        max-height: 80px;
+    }
+}
+
+
+.album-container {
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.album-image-container {
+    flex: 0 0 auto;
+
+    display: flex; /* Flexbox for centering image */
+    justify-content: center; /* Center the image horizontally */
+}
+
+
+
+
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    cursor: pointer;
+}

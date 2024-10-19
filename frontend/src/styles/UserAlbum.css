@@ -1,0 +1,71 @@
+.album-container {
+    padding: 20px; /* Reduced padding for better fit on smaller screens */
+    position: relative; /* Position relative for button positioning */
+    max-width: 1200px; /* Set a max-width for larger screens */
+    margin: 0 auto; /* Center the container */
+}
+
+.album-heading {
+    font-size: 2rem; /* Use relative units for font size */
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin-bottom: 10px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+    padding-bottom: 20px; /* Adjusted padding */
+}
+
+/* Send Messages Button */
+.send-messages-button {
+    position: absolute; /* Keep absolute positioning for button */
+    right: 20px; /* Adjust distance from the right */
+    top: 20px; /* Adjust distance from the top */
+    background-color: #090909; /* Button background color */
+    font-weight: 500;
+    color: #666868; /* Unified text color */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* Unified padding */
+    border: 1px solid transparent; /* Border for layout */
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    text-align: center; /* Center text alignment */
+    background-color: rgba(248, 249, 250, 0);
+}
+
+/* Hover effect for the button */
+.send-messages-button:hover {
+    background-color: #f8f9fa; /* Hover background color */
+    color: #0056b3; /* Hover text color */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .album-container {
+        padding: 15px; /* Less padding on mobile */
+    }
+
+    .album-heading {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .send-messages-button {
+        right: 10px; /* Adjust button positioning */
+        top: 10px; /* Adjust button positioning */
+        padding: 8px 16px; /* Adjust padding */
+    }
+}
+
+/* Additional Media Query for Smaller Screens */
+@media (max-width: 480px) {
+    .album-heading {
+        font-size: 1.25rem; /* Further decrease font size for very small screens */
+    }
+
+    .send-messages-button {
+        padding: 6px 12px; /* Smaller padding for compactness */
+        font-size: 14px; /* Adjust font size for button */
+    }
+}

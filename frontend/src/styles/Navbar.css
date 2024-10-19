@@ -1,0 +1,110 @@
+/* Navbar styles */
+.navbar {
+    padding: 20px 0px; /* 增加一些侧边内边距 */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: relative; 
+    margin-bottom: 40px; 
+    //border-bottom-left-radius: 10px;
+    //border-bottom-right-radius: 10px;
+    width: 100%; /* 设置为100%宽度 */
+    background-color: #ffffff;
+}
+
+.navbar-left {
+    display: flex;
+    flex: 1; /* 使左侧区域占据剩余空间 */
+    justify-content: center; /* 居中对齐 */
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar-item, .dropdown-toggle, .search-button {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666868; /* 统一文本颜色 */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* 统一内边距 */
+    border: 1px solid transparent; /* 边框用于布局 */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* 平滑过渡 */
+    text-align: center; /* 文本居中对齐 */
+    border-radius: 50px;
+}
+
+.navbar-item:hover, .dropdown-toggle:hover {
+    background-color: #f8f9fa; /* 悬停背景颜色 */
+    color: #0056b3; /* 悬停文本颜色 */
+    border-radius: 50px;
+    //transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.search-button:hover {
+    background-color: #f8f9fa; /* 悬停背景颜色 */
+    color: #0056b3; /* 悬停文本颜色 */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Home and chatroom buttons */
+.navbar-home-button, .navbar-chatroom-button {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666868; /* 统一文本颜色 */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* 统一内边距 */
+    border: 1px solid transparent; /* 边框用于布局 */
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* 平滑过渡 */
+    text-align: center; /* 文本居中对齐 */
+    background-color: rgba(248, 249, 250, 0); /* Light background for the button */
+}
+
+.navbar-home-button:hover, .navbar-chatroom-button:hover {
+    background-color: #f8f9fa; /* Hover background color */
+    color: #0056b3; /* 悬停文本颜色 */
+    //transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* 垂直堆叠 */
+        align-items: flex-start; /* 左对齐 */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* 垂直排列导航项 */
+        width: 100%; /* 占据全宽 */
+    }
+
+    .navbar li {
+        margin: 10px 0; /* 垂直间距 */
+    }
+
+    .navbar-item, .dropdown-toggle, .search-button {
+        width: 100%; /* 使按钮占据全宽 */
+        justify-content: center; /* 中心对齐 */
+        padding: 12px; /* 增加内边距 */
+    }
+}

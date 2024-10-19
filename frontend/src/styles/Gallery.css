@@ -1,0 +1,142 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Home section */
+.home {
+  margin-bottom: 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+}
+
+.home-header h1 {
+  font-size: 12rem;
+  margin-bottom: 1rem;
+  text-align: center; /* Center the heading text */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.home-button {
+  background-color: #fff;
+  color: #1a202c;
+  padding: 1.1rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #f7fafc;
+}
+
+/* Category buttons */
+.category-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+}
+
+.category-container {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1); /* Light background for visibility */
+  padding: 1rem;
+  border-radius: 0.5rem; /* Rounded corners */
+  list-style: none; /* Remove bullet points */
+}
+
+.category-container li {
+  margin: 0 0.5rem; /* Add space between buttons */
+}
+
+.category-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.category-button.active {
+  background-color: white;
+  color: #1a202c;
+}
+
+.category-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Gallery section */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center images */
+  gap: 1rem; /* Space between images */
+  padding: 1rem; /* Adjust button padding */
+}
+
+.gallery-image {
+  display: flex; /* Use Flexbox for individual image containers */
+  justify-content: center; /* Center the image */
+  align-items: center; /* Center the image */
+
+  flex: 1; /* Allow the image container to grow */
+  overflow: hidden; /* Prevent overflow */
+}
+
+
+
+.gallery-image img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Scale the image to fit within the container */
+  border-radius: 0.5rem; /* Optional: rounded corners */
+}
+
+.gallery-image-container {
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden; /* Prevents overflow during animation */
+}
+
+.flip {
+  transition: transform 0.6s ease-in-out; 
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .gallery-image-container {
+    width: 100%;
+  }
+
+  .home-header h1 {
+    font-size: 1.5rem; /* Adjust heading size on smaller screens */
+  }
+
+  .home-button {
+    padding: 0.5rem; /* Adjust button padding */
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .home-header h1 {
+    font-size: 1.2rem; /* Further adjust heading size */
+  }
+
+  .home-button {
+    padding: 0.4rem; /* Further adjust button padding */
+    font-size: 0.8rem; /* Further adjust font size */
+  }
+}

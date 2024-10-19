@@ -1,0 +1,185 @@
+.album-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff; 
+    opacity: 0.9;
+
+}
+
+.year-section {
+    margin-bottom: 40px;
+
+
+}
+
+.year-header {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+
+}
+
+.album-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 150px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+
+
+
+}
+
+.date-column {
+    width: 120px;
+    text-align: right;
+    padding-right: 40px;
+
+}
+
+.month-column{
+    margin-bottom: 20px;
+    padding-right: 30px;
+}
+
+.month {
+    font-size: 20px;
+    font-weight: 600;
+    color: #555;
+}
+
+.day {
+    font-size: 18px;
+    color: #777;
+}
+
+.cover-image-column {
+    width: 120px;
+    padding: 0 20px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* 绝对定位 */
+    left: 50%; /* 从左侧50%开始 */
+    transform: translateX(-50%); /* 向左移动自身宽度的一半 */
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-cover-image {
+    width: 100%;
+    height: 100%;
+
+
+    object-fit: cover;
+    border-radius: 8px;
+    flex-direction: column;
+    background-color: #e0e0e0;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    transform-origin: center center; /* Center the scale effect */
+
+}
+
+
+.album-cover-image:hover {
+    transform: scale(2); /* Slightly enlarge button on hover */
+}
+
+
+.album-info-column {
+    flex-grow: 1;
+    padding-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.album-header-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.album-header-button:hover {
+    color: rgba(51, 51, 51, 0.16); /* Optional: change color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+
+
+.create-album {
+    text-align: center; /* Center the button within its container */
+    margin-bottom: 60px; /* Add spacing below the button */
+}
+
+.create-album button {
+    background-color: rgba(102, 104, 104, 0.02); /* Primary button color */
+    color: #090909; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 23px; /* Font size */
+    font-weight: 600; /* Bold text */
+    padding: 10px 20px; /* Padding around the text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+}
+
+.create-album button:hover {
+    background-color: #ededed; /* Darker shade on hover */
+    transform: scale(1.2); /* Slightly enlarge button on hover */
+}
+/* Existing styles omitted for brevity */
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Black with opacity */
+    cursor: pointer;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain; /* Ensure the image fits within the modal without distortion */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000; /* Make sure close button is above the modal */
+}
+
+.close:hover {
+    color: #bbb; /* Change color on hover */
+}
+
+

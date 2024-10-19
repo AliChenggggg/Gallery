@@ -1,0 +1,76 @@
+/* src/styles/ImageUpload.css */
+
+.image-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+}
+
+.image-upload-container:hover  {
+
+    transform: scale(1.2); /* Slightly enlarge button on hover */
+
+}
+
+
+.image-upload-input {
+    display: none; /* Hide the default file input */
+
+}
+
+.image-upload-button {
+    background-color: rgba(102, 104, 104, 0.02); /* Primary button color */
+    color: #090909; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 23px; /* Font size */
+    font-weight: 600; /* Bold text */
+    padding: 10px 20px; /* Padding around the text */
+
+}
+
+.image-upload-button:hover {
+    background-color: #ededed; /* Darker shade on hover */
+    transform: scale(1.2); /* Slightly enlarge button on hover */
+}
+
+.image-upload-button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgb(255, 255, 255); /* Add custom focus shadow */
+
+}
+
+.uploading-message {
+    font-size: 18px;
+    color: #090909;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.uploading-message::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ffffff;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -35px;
+    transform: translateY(-50%);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: translateY(-50%) rotate(0deg); }
+    100% { transform: translateY(-50%) rotate(360deg); }
+}

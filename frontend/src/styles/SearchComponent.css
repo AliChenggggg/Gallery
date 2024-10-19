@@ -1,0 +1,71 @@
+/* SearchComponent.css */
+.search-component {
+    display: flex;
+    justify-content: center; /* Center the form within its container */
+    width: 100%;
+    max-width: 600px; /* Optional: set a maximum width to prevent excessive stretching */
+    margin: 0 auto; /* Center the component horizontally */
+}
+
+.search-input-container {
+    position: relative; /* To position the button inside the input container */
+    width: 100%; /* Ensure the container takes up full width */
+    display: flex; /* Flexbox to align input and button */
+}
+
+.search-component input[type="text"] {
+    flex: 1; /* Make input take full width of the container */
+    padding: 8px 12px; /* Adjust padding for input */
+    border: 1px solid #ddd; /* Border to match button */
+    border-radius: 4px 0 0 4px; /* Rounded corners on the left side */
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    text-align: center; /* Center text horizontally */
+}
+
+.search-component input[type="text"]:focus {
+    border-color: #007bff; /* Border color on focus */
+}
+
+.search-button {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333; /* Unified text color */
+    background-color: #f8f9fa; /* Light background for the button */
+    border: 1px solid #ddd; /* Border to match input */
+    border-radius: 0 4px 4px 0; /* Rounded corners on the right side */
+    padding: 8px 16px; /* Padding to match input height */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    border-left: none; /* Remove left border to blend with input */
+}
+
+.search-button:hover {
+    background-color: #e2e6ea; /* Slightly darker on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-component {
+        max-width: 90%; /* Adjust maximum width for smaller screens */
+    }
+
+    .search-component input[type="text"],
+    .search-button {
+        font-size: 14px; /* Slightly reduce font size for better fit */
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .search-component {
+        max-width: 95%; /* Further adjust for very small screens */
+    }
+
+    .search-component input[type="text"],
+    .search-button {
+        font-size: 12px; /* Further reduce font size for very small screens */
+        padding: 6px; /* Adjust padding for better fit */
+    }
+}
