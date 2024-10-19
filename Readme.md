@@ -6,7 +6,7 @@ Web Design：
 
 User Flow Diagram:
 
-![image-20241019225638459](https://github.com/AliChenggggg/Gallery/blob/main/frontend/src/IMAGES/Business process flow example.png)
+![image-20241019225638459](https://github.com/AliChenggggg/Gallery/blob/main/frontend/src/IMAGES/Business.png)
 
 Architecture:
 
