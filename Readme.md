@@ -18,7 +18,7 @@ Architecture:
 
 Front End & Back End:
 
-![image-20241019225738992](C:\Users\24466\AppData\Roaming\Typora\typora-user-images\image-20241019225738992.png)
+![image-20241019225738992](https://github.com/AliChenggggg/Gallery/blob/main/frontend/src/IMAGES/Gallery_Project_Summary1.jpg)
 
 
 
@@ -26,7 +26,7 @@ Front End & Back End:
 
 Real-time Chat System:
 
-![image-20241019225746454](C:\Users\24466\AppData\Roaming\Typora\typora-user-images\image-20241019225746454.png)
+![image-20241019225746454](https://github.com/AliChenggggg/Gallery/blob/main/frontend/src/IMAGES/Gallery_Project_Summary2.jpg)
 
 
 
