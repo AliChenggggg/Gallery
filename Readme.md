@@ -8,9 +8,7 @@ https://www.figma.com/design/jpEqTnIohQC62WNimzuKzM/Untitled?node-id=0-1&t=OG20o
 
 User Flow Diagram:
 
-![image-20241019225638459](C:\Users\24466\AppData\Roaming\Typora\typora-user-images\image-20241019225638459.png)
-
-
+![image-20241019225638459](https://github.com/AliChenggggg/Gallery/blob/main/frontend/src/IMAGES/Gallery_Project_Summary.jpg)
 
 Architecture:
 
