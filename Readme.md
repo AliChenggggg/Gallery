@@ -2,23 +2,21 @@
 
 Web Design：
 
-https://www.figma.com/design/jpEqTnIohQC62WNimzuKzM/Untitled?node-id=0-1&t=OG20oQYlltIDOxLR-1
-
-
+![image-20241019225638459](https://github.com/AliChenggggg/Gallery/blob/main/frontend/src/IMAGES/Untitled.png)
 
 User Flow Diagram:
 
-![image-20241019225638459](https://github.com/AliChenggggg/Gallery/blob/main/frontend/src/IMAGES/Gallery_Project_Summary.jpg)
+![image-20241019225638459](https://github.com/AliChenggggg/Gallery/blob/main/frontend/src/IMAGES/Business process flow example.png)
 
 Architecture:
 
-![image-20241019225702689](C:\Users\24466\AppData\Roaming\Typora\typora-user-images\image-20241019225702689.png)
+![image-20241019225702689](https://github.com/AliChenggggg/Gallery/blob/main/frontend/src/IMAGES/Gallery_Project_Summary1.jpg)
 
 
 
 Front End & Back End:
 
-![image-20241019225738992](https://github.com/AliChenggggg/Gallery/blob/main/frontend/src/IMAGES/Gallery_Project_Summary1.jpg)
+![image-20241019225738992](https://github.com/AliChenggggg/Gallery/blob/main/frontend/src/IMAGES/Gallery_Project_Summary2.jpg)
 
 
 
@@ -26,7 +24,7 @@ Front End & Back End:
 
 Real-time Chat System:
 
-![image-20241019225746454](https://github.com/AliChenggggg/Gallery/blob/main/frontend/src/IMAGES/Gallery_Project_Summary2.jpg)
+![image-20241019225746454](https://github.com/AliChenggggg/Gallery/blob/main/frontend/src/IMAGES/Gallery_Project_Summary3.jpg)
 
 
 
